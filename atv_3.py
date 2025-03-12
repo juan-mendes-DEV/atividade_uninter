@@ -1,13 +1,17 @@
 # função da escolha de serviço
 def escolha_servico(): 
     opcao_escolhida = ""
-
+    print("Entre com o serviço desejado:\n")
+    print("[DIG] para digitalização")
+    print("[ICO] para impressão colorida")
+    print("[IPB] para impressão preto e branco")
+    print("[FOT] para fotocopia")
     # loop infinito ate determinada ação for feita
     while True:
         # tratamento de erros
         try:
             # obtendo a escolha do usuario e retornando
-            escolha = input("qual serviço vc deseja contratar? [DIG] [ICO] [IPB] ou [FOT]\n\n").upper()
+            escolha = input("qual serviço vc deseja contratar? [DIG] [ICO] [IPB] ou [FOT]\n-").upper()
             if escolha == "DIG":
                 print("o custo por página é de um real e dez centavos")
                 return escolha
@@ -219,7 +223,7 @@ def main():
     nome = input("digite seu nome: ")
     sobrenome = input("digite seu sobrenome: ")
 
-    print(f"ola {nome} {sobrenome} seja bem vindo ao sistema de cobrança de serviços de uma copiadora. ;D\n\n")
+    print(f"ola {nome} {sobrenome} seja bem vindo a copiadora. ;D\n\n")
 
     quantidade_num_pagina = num_pagina()
     servico_adicional(quantidade_num_pagina)

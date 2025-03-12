@@ -2,9 +2,16 @@
 print("Para continuar, digite seu nome e sobrenome.")
 nome = input("Digite seu nome: ")
 sobrenome = input("Digite seu sobrenome: ")
+print("----------------------------------------------------------------------------")
+print(f" | Olá {nome} {sobrenome}, seja bem-vindo à minha loja de Açaí e Cupuaçu! |")
+print("----------------------------------------------------------------------------\n")
 
-print(f"Olá {nome} {sobrenome}, seja bem-vindo à minha loja de Açaí e Cupuaçu! \n")
-
+print("-------------------cardapio-----------------------")
+print("----Tamanho| Cupuaçu [CP] | Açai [AC] |----")
+print("    P      |   R$ 9.00    |   R$ 11.00    ")
+print("    M      |   R$ 14.00   |   R$ 16.00    ")
+print("    G      |   R$ 18.00   |   R$ 20.00    ")
+print("---------------------------------------------------")
 acpequeno = 11
 acmedio = 16 
 acgrande = 20
